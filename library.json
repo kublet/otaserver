@@ -1,0 +1,24 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "keywords": "Arduino, ESP32",
+  "description": "A library for development on Kublet devices",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/kublet/dev"
+  },
+  "authors":
+  [
+    {
+        "name": "Audrey",
+        "email": "aunnerdev@gmail.com",
+        "maintainer": true
+    }
+  ],
+  "homepage": "https://thekublet.com/",
+
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "headers": "dev.h"
+}
