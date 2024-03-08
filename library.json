@@ -1,24 +1,23 @@
 {
-  "name": "dev",
-  "version": "1.0.0",
+  "name": "OTAServer",
+  "version": "1.0.2",
   "keywords": "Arduino, ESP32",
   "description": "A library for development on Kublet devices",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/kublet/dev"
+    "url": "https://github.com/kublet/otaserver"
   },
   "authors":
   [
     {
-        "name": "Audrey",
+        "name": "Kublet",
         "email": "aunnerdev@gmail.com",
         "maintainer": true
     }
   ],
   "homepage": "https://thekublet.com/",
-
   "frameworks": "arduino",
   "platforms": "espressif32",
-  "headers": "dev.h"
+  "headers": "OTAServer.h"
 }
