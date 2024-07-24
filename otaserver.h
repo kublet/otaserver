@@ -4,6 +4,9 @@
 #include <ESPmDNS.h>
 #include <Update.h>
 
+#include <WiFi.h>
+#include <Preferences.h>
+
 class OTAServer {
   private:
 
@@ -13,4 +16,6 @@ class OTAServer {
     void run();
     void handle();
     void stop();
+
+    void connectWifi();
 };

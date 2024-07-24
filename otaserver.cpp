@@ -77,3 +77,23 @@ void OTAServer::handle() {
 void OTAServer::stop() {
   server.stop();
 }
+
+/***************************************************************************************
+** Function name:           connectWifi
+** Description:             Connects to WiFi
+***************************************************************************************/
+void OTAServer::connectWifi() {
+  preferences.begin("core", true);
+  std::string ssid = preferences.getString("ssid").c_str();
+  std::string pw = preferences.getString("pw").c_str();
+  preferences.end();
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid.c_str(), pw.c_str());
+  Serial.print("Connected to ");
+  Serial.println(ssid.c_str());
+  while((WiFi.status() != WL_CONNECTED)) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println(WiFi.localIP());
+}
